@@ -1,13 +1,17 @@
 CUSTOMERS = [
     {
            "id": 1,
-           "name": "Alina Paige",
-           "address": "4001 Anderson Road"
+           "firstName": "Alina",
+           "lastName": "Paige",
+           "email": "alina@me.com",
+           "password": "page1"
         },
         {
-            "id": 2,
-            "name": "Jordan Alexander",
-            "address": "237 Jackson Lane"
+           "id": 2,
+           "firstName": "Jordan",
+           "lastName": "Alexander",
+           "email": "jordan@me.com",
+           "password": "jordan1"
         }
 ]
 
