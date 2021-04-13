@@ -41,7 +41,7 @@ def create_location(location):
     # Add an `id` property to the location dictionary
         location["id"] = new_id
 
-    # Add the animal dictionary to the list
+    # Add the location dictionary to the list
         LOCATIONS.append(location)
 
     # Return the dictionary with `id` property added
