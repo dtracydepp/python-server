@@ -106,35 +106,26 @@ class HandleRequests(BaseHTTPRequestHandler):
         # Parse the URL
         (resource, id) = self.parse_url(self.path)
 
-        # Initialize new animal
-        new_animal = None
-
-        # Initialize new location
-        new_location = None
-
-        # Initialize new employee
-        new_employee = None
-
-        # Initialize new customer
-        new_customer = None
+        # Initialize new object
+        new_object = None
 
         # Add a new animal to the list.
         if resource == "animals":
-         new_animal = create_animal(post_body)
+         new_object = create_animal(post_body)
 
         # Add a new location to the list. 
         if resource == "locations":
-         new_location = create_location(post_body)
+         new_object = create_location(post_body)
 
         # Add a new employee to the list. 
         if resource == "employees":
-         new_employee = create_employee(post_body)
+         new_object = create_employee(post_body)
 
         if resource == "customers":
-         new_customer = create_customer(post_body)
+         new_object = create_customer(post_body)
 
-        # Encode the new animal,location, employee and send in response
-        self.wfile.write(f"{new_animal, new_location, new_employee, new_customer}".encode())
+        # Encode the new object and send in response
+        self.wfile.write(f"{new_object}".encode())
 
 
     # Here's a method on the class that overrides the parent's method.
