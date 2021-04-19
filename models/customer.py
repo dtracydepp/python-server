@@ -10,3 +10,5 @@ class Customer():
         self.email = email
         self.password = password
         self.status = status
+
+new_customer = Customer(1, "Ava", "Marie", "ava@me.com", "ava1", "active")

@@ -8,3 +8,5 @@ class Location():
         self.name = name
         self.address = address
         self.status = status
+
+new_location = Location(1, "Nashville North", "8422 Johnson Pike", "open")

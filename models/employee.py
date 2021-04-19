@@ -8,3 +8,5 @@ class Employee():
         self.name = name
         self.location_id = location_id
         self.status = status
+
+new_employee = Employee(1, "Dominick", 2, "employed")
