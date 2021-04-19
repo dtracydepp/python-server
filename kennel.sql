@@ -88,4 +88,11 @@ SELECT
 FROM employee e
 WHERE e.id = 3
 
+-- Get only the location rows where the `id` field value is 3
+SELECT
+    l.id,
+    l.name,
+    l.address
+FROM location l
+WHERE l.id = 2
 
