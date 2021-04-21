@@ -96,3 +96,5 @@ SELECT
 FROM location l
 WHERE l.id = 2
 
+-- Adding the animal back
+INSERT INTO `Animal` VALUES (null, "Daps", "Kennel", "Boxer", 2, 2);
