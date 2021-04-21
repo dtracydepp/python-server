@@ -221,3 +221,12 @@ def get_animals_by_status(status):
 
     # Use `json` package to properly serialize list as JSON
     return json.dumps(animals)
+
+def delete_animal(id):
+    with sqlite3.connect("./kennel.db") as conn:
+        db_cursor = conn.cursor()
+
+        db_cursor.execute("""
+        DELETE FROM animal
+        WHERE id = ?
+        """, (id, ))
